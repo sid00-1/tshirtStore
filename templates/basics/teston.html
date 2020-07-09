@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% block content %}
+<!--Grid row-->
+<div class="row d-flex justify-content-center wow fadeIn">
+
+  <!--Grid column-->
+  <div class="col-md-6 text-center">
+    <hr>
+    <!-- Card group -->
+    <div class="card-group ">
+      {% for test  in test_list %}
+      <!-- Card -->
+      <!-- <div class="card mb-4 mr-2"> -->
+
+      <!-- Card image -->
+      <!-- <div class="view overlay">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/77.jpg" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div> -->
+
+      <!-- Card content -->
+      <!-- <div class="card-body"> -->
+
+      <!-- Title -->
+      <!-- <h4 class="card-title">Testimony by {{test.name}}</h4> -->
+      <!-- Text -->
+      <!-- <p class="card-text">{{test.message}}.</p> -->
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <!-- <button type="button" class="btn btn-primary btn-md">Read more</button> -->
+
+      <!-- </div> -->
+      <!-- Card content -->
+
+      <!-- </div> -->
+      <!-- Card -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 m-auto py-2 ">
+            <div class="media">
+              <img class="d-flex rounded-circle avatar z-depth-1-half mr-3"
+                src="https://mdbootstrap.com/img/Photos/Avatars/avatar-10.jpg" alt="Avatar">
+              <div class="media-body">
+                <h5 class="mt-0 font-weight-bold blue-text">{{test.name}}</h5>
+                {{test.message}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% endfor %}
+
+
+    </div>
+
+    <h4 class="my-4 h4">Additional information</h4>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus suscipit modi sapiente illo soluta odit
+      voluptates,
+      quibusdam officia. Neque quibusdam quas a quis porro? Molestias illo neque eum in laborum.</p>
+
+    <hr>
+    <div class="">
+
+      <div class="text-center pt-4 pb-3">
+
+        <h5 class="mt-1 mb-4">Leave a Reply</h5>
+
+        <form action="." method='POST'>
+          {% csrf_token %}
+
+          <!-- Your review -->
+          <div class="md-form md-outline">
+            <textarea id="review" name="review" class="md-textarea form-control" rows="4"></textarea>
+            <label for="review">Message</label>
+          </div>
+
+          <!-- Name -->
+          <div class="md-form md-outline">
+            <input type="text" id="name" name="name" class="form-control">
+            <label for="name">Name</label>
+          </div>
+
+          <div class="md-form md-outline">
+            <input type="email" id="email" name="email" class="form-control">
+            <label for="email">Email</label>
+          </div>
+
+          <div class="text-center">
+            <input type="submit" name='submit' value="submit" class="btn btn-primary btn-md" />
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!--Grid column-->
+
+</div>
+
+
+<!-- Card group -->
+{% endblock content %}

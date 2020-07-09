@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content%}
+
+<div class="jumbotron">
+    <h2 class="h1-responsive">Hello, Want to know us!</h2>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
+        to featured content or information.</p>
+    <hr class="my-2">
+    <p>It uses utility classes for typography and spacing to space content out within the larger
+        container.
+    </p>
+    <a href=" {% url 'basics:about' %}" class="btn btn-primary btn-lg" role="button">Learn more about us</a>
+</div>
+<!--Accordion wrapper-->
+
+<div class="card">
+    <div class="card-header">
+        Featured
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">contact us</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="{% url 'basics:contact' %}" class=" btn btn-primary">Tell us</a>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        Featured
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">Request</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="{% url 'core:request-refund' %}" class=" btn btn-primary">Get Refund</a>
+    </div>
+</div>
+
+{% endblock %}

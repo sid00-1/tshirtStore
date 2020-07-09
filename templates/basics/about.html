@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!--Grid row-->
+<div class="row d-flex justify-content-center wow fadeIn">
+
+    <!--Grid column-->
+    <div class="col-md-6 text-center">
+
+        <h4 class="my-4 h4">Additional information</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus suscipit modi sapiente illo soluta odit
+            voluptates,
+            quibusdam officia. Neque quibusdam quas a quis porro? Molestias illo neque eum in laborum.</p>
+
+    </div>
+    <!--Grid column-->
+
+</div>
+<!--Grid row-->
+
+<!--Grid row-->
+<div class="accordion md-accordion accordion-3 z-depth-1-half" id="accordionEx194" role="tablist"
+    aria-multiselectable="true">
+
+    <ul class="list-unstyled d-flex justify-content-center pt-5 red-text">
+        <li><i class="fas fa-anchor mr-3 fa-2x" aria-hidden="true"></i></li>
+        <li><i class="far fa-life-ring mr-3 fa-2x" aria-hidden="true"></i></li>
+        <li><i class="far fa-star fa-2x" aria-hidden="true"></i></li>
+    </ul>
+
+    <h2 class="text-center text-uppercase red-text py-4 px-3">Hello my friend,{{request.user}}!</h2>
+
+    <hr class="mb-0">
+
+    <!-- Accordion card -->
+    <div class="card">
+
+        <!-- Card header -->
+        <div class="card-header" role="tab" id="heading4">
+            <a data-toggle="collapse" data-parent="#accordionEx194" href="#collapse4" aria-expanded="true"
+                aria-controls="collapse4">
+                <h3 class="mb-0 red-text">
+                    How awesome accordion I am? <div class="animated-icon1 float-right mt-1">
+                        <span></span><span></span><span></span></div>
+                </h3>
+            </a>
+        </div>
+
+        <!-- Card body -->
+        <div id="collapse4" class="collapse show" role="tabpanel" aria-labelledby="heading4"
+            data-parent="#accordionEx194">
+            <div class="card-body pt-0">
+                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute,
+                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                    3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                    accusamus labore sustainable VHS.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Accordion card -->
+
+    <!-- Accordion card -->
+    <div class="card">
+
+        <!-- Card header -->
+        <div class="card-header" role="tab" id="heading5">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx194" href="#collapse5"
+                aria-expanded="false" aria-controls="collapse5">
+                <h3 class="mb-0 red-text">
+                    You're the greatest accordion! <div class="animated-icon1 float-right mt-1">
+                        <span></span><span></span><span></span></div>
+                </h3>
+            </a>
+        </div>
+
+        <!-- Card body -->
+        <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx194">
+            <div class="card-body pt-0">
+                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute,
+                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                    3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                    accusamus labore sustainable VHS.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Accordion card -->
+
+    <!-- Accordion card -->
+    <div class="card">
+
+        <!-- Card header -->
+        <div class="card-header" role="tab" id="heading6">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx194" href="#collapse6"
+                aria-expanded="false" aria-controls="collapse6">
+                <h3 class="mb-0 red-text">
+                    Thank you my dear! <div class="animated-icon1 float-right mt-1">
+                        <span></span><span></span><span></span></div>
+                </h3>
+            </a>
+        </div>
+
+        <!-- Card body -->
+        <div id="collapse6" class="collapse" role="tabpanel" aria-labelledby="heading6" data-parent="#accordionEx194">
+            <div class="card-body pt-0">
+                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute,
+                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                    3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                    accusamus labore sustainable VHS.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Accordion card -->
+</div>
+<!--/.Accordion wrapper-->
+<!--Grid row-->
+<!-- Card -->
+<hr>
+<div class="card card-image"
+    style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+    <!-- Content -->
+    <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+        <div>
+            <h5 class="pink-text"><i class="fas fa-chart-pie"></i> Marketing</h5>
+            <h3 class="card-title pt-2"><strong>This is the card title</strong></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam,
+                voluptatem,
+                optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
+                Odit sed qui, dolorum!.</p>
+            <a class="btn btn-pink"><i class="fas fa-clone left"></i> View project</a>
+        </div>
+    </div>
+
+</div>
+<!-- Card -->
+{% endblock content %}

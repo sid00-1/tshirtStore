@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+{% block content %}
+<hr>
+
+<!--Grid row-->
+<div class="row d-flex justify-content-center wow fadeIn">
+
+  <!--Grid column-->
+  <div class="col-md-6 text-center">
+
+    <h4 class="my-4 h4">Additional information</h4>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus suscipit modi sapiente illo soluta odit
+      voluptates,
+      quibusdam officia. Neque quibusdam quas a quis porro? Molestias illo neque eum in laborum.</p>
+
+  </div>
+  <!--Grid column-->
+
+</div>
+<!--Grid row-->
+
+<!--Grid row-->
+<div class="row wow fadeIn">
+
+  <!--Grid column-->
+  <div class="col-lg-4 col-md-12 mb-4">
+
+    <!-- <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/11.jpg" class="img-fluid" alt=""> -->
+
+  </div>
+  <!--Grid column-->
+
+  <!--Grid column-->
+  <div class="col-lg-4 col-md-6 mb-4">
+
+    <!-- <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/12.jpg" class="img-fluid" alt=""> -->
+
+  </div>
+  <!--Grid column-->
+
+  <!--Grid column-->
+  <div class="col-lg-4 col-md-6 mb-4">
+
+    <!-- <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/13.jpg" class="img-fluid" alt=""> -->
+
+  </div>
+  <!--Grid column-->
+
+</div>
+<!--Grid row-->
+<!-- Card -->
+<hr>
+
+<!--Grid row-->
+<div class="row d-flex justify-content-center wow fadeIn">
+
+  <!--Grid column-->
+  <div class="col-md-6 text-center">
+
+    <h4 class="my-4 h4">Additional information</h4>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus suscipit modi sapiente illo soluta odit
+      voluptates,
+      quibusdam officia. Neque quibusdam quas a quis porro? Molestias illo neque eum in laborum.</p>
+
+    <hr>
+    <div class="">
+
+      <div class="text-center pt-4 pb-3">
+
+        <h5 class="mt-1 mb-4">Leave a Reply</h5>
+
+        <form action="." method='POST'>
+          {% csrf_token %}
+
+          <!-- Your review -->
+          <div class="md-form md-outline">
+            <textarea id="review" name="review" class="md-textarea form-control" rows="4"></textarea>
+            <label for="review">Message</label>
+          </div>
+
+          <!-- Name -->
+          <div class="md-form md-outline">
+            <input type="text" id="name" name="name" class="form-control">
+            <label for="name">Name</label>
+          </div>
+
+          <div class="md-form md-outline">
+            <input type="email" name="email" id="email" class="form-control">
+            <label for="email">Email</label>
+          </div>
+
+          <div class="text-center">
+            <input type="submit" name="submit" value="submit" class="btn btn-primary btn-md">
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!--Grid column-->
+
+</div>
+
+
+<!-- Card -->
+<hr>
+<div class="card card-image"
+  style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+  <!-- Content -->
+  <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+    <div>
+      <h5 class="pink-text"><i class="fas fa-chart-pie"></i> Marketing</h5>
+      <h3 class="card-title pt-2"><strong>This is the card title</strong></h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam,
+        voluptatem,
+        optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
+        Odit sed qui, dolorum!.</p>
+      <a class="btn btn-pink"><i class="fas fa-clone left"></i> View project</a>
+    </div>
+  </div>
+
+</div>
+<!-- Card -->
+{% endblock content %}
